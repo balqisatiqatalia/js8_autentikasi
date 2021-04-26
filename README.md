@@ -5,6 +5,8 @@ A new Flutter project.
 ## Getting Started
 ![screenshot](image/ss.jpeg)
 ![screenshot](image/ss1.jpeg)
+![screenshot](image/ss2.jpeg)
+![screenshot](image/ss3.jpeg)
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:

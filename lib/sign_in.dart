@@ -43,3 +43,19 @@ Future<String> signInWithGoogle() async {
   await googleSignIn.signOut();
   print("User Signed Out");
   }
+
+  Future<User> signIn(String email, String password) async {
+    await Firebase.initializeApp();
+
+    UserCredential authResult =
+        await _auth.signInWithEmailAndPassword(email: email, password: password);
+    User user = authResult.user;
+
+    if (user != null) {
+  // Checking if email and name is null
+      assert(user.email != null);
+      email = user.email;
+      return user;
+    }
+  return null;
+}
